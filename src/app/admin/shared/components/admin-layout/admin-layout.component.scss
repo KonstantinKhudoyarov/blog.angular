@@ -1,0 +1,53 @@
+.admin__nav {
+    padding: 20px 0;
+    background-color: #e3e3f8;
+    box-shadow: 0 2px 1px 2px #ebebed;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.admin__title {
+
+    a {
+        display: block;
+        color: #000;
+    }
+}
+
+.admin__main {
+    padding: 15px 0;
+}
+
+.admin__nav-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.admin__nav-item {
+
+    &:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    a {
+        display: block;
+        color: rgb(105, 92, 92);
+        transition: color .3s ease;
+
+        &:hover {
+            color: #000;
+        }
+    }
+}
+
+.active {
+
+    a {
+        color: #000;
+    }
+}
