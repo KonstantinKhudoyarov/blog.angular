@@ -10,7 +10,7 @@ import { AuthService } from '../../sevices/auth.service';
 export class AdminLayoutComponent implements OnInit {
 
   constructor(private router: Router,
-              private auth: AuthService) { }
+              public auth: AuthService) { }
 
   ngOnInit() {
   }

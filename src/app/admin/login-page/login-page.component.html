@@ -1,4 +1,5 @@
 <form class="login" [formGroup]="form" (ngSubmit)="submit()">
+    <div class="login__error" *ngIf="auth.error$ | async as error">{{error}}</div>
     <div class="login__control" [ngClass]="{invalid: form.get('email').touched && form.get('email').invalid}">
         <label for="email" class="login__label">Email</label>
         <input id="email" class="login__input" type="email" formControlName="email">
