@@ -1,1 +1,20 @@
-<p>create-page works!</p>
+<form class="create" [formGroup]="form" (ngSubmit)="submit()">
+    <div class="create__control" [ngClass]="{invalid: form.get('title').touched && form.get('title').invalid}">
+        <label for="title" class="create__label">Post name:</label>
+        <input id="title" class="create__input" type="text" formControlName="title">
+        <div class="create__validation" *ngIf="form.get('title').touched && form.get('title').invalid">
+            <small class="create__validation-error" *ngIf="form.get('title').errors.required">Заполните поле title</small>
+        </div>
+    </div>
+    <div class="create__control">
+        <label for="author" class="create__label">Post content:</label>
+    </div>
+    <div class="create__control" [ngClass]="{invalid: form.get('author').touched && form.get('author').invalid}">
+        <label for="author" class="create__label">Author:</label>
+        <input id="author" class="create__input" type="text" formControlName="author">
+        <div class="create__validation" *ngIf="form.get('author').touched && form.get('author').invalid">
+                <small class="create__validation-error" *ngIf="form.get('author').errors.required">Заполните поле author</small>
+        </div>
+    </div>
+    <button type="submit" class="create__btn" [disabled]="form.invalid">Create</button>
+</form>
