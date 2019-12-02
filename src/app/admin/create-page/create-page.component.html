@@ -6,8 +6,9 @@
             <small class="create__validation-error" *ngIf="form.get('title').errors.required">Заполните поле title</small>
         </div>
     </div>
-    <div class="create__control">
+    <div class="create__control create__control_editor">
         <label for="author" class="create__label">Post content:</label>
+        <quill-editor formControlName="text"></quill-editor>
     </div>
     <div class="create__control" [ngClass]="{invalid: form.get('author').touched && form.get('author').invalid}">
         <label for="author" class="create__label">Author:</label>
