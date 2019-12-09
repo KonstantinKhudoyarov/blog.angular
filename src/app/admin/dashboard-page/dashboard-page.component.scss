@@ -1,13 +1,42 @@
+.search-filter {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    transition: .2s ease-out;
+    outline: none;
+
+    &:focus {
+        max-width: 300px;
+    }
+}
+
+.dashboard {
+    width: 100%;
+}
+
 .dashboard__head {
     background-color: #777;
 }
 
-.dashboard__th {
-    color: #fff;
+.dashboard__tr {
+    border-collapse: collapse;
+
+    &_odd {
+        background-color: rgb(226, 226, 226);
+    }
 }
 
-.dashboard__td,
 .dashboard__th {
+    padding: 10px;
+    color: #fff;
+
+    &_date {
+        width: 25%;
+    }
+}
+
+.dashboard__td {
     padding: 10px;
 }
 
