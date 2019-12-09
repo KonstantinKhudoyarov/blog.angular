@@ -12,7 +12,7 @@ export class AuthService {
 
   public error$: Subject<string> = new Subject<string>();
 
-  constructor(private http: HttpClient) { console.log(this.error$); }
+  constructor(private http: HttpClient) { }
 
   get token(): string {
     const expDate = new Date(localStorage.getItem('fb-token-exp'));
