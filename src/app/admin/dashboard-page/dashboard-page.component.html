@@ -18,7 +18,7 @@
                 <td class="dashboard__td">{{post.date}}</td>
                 <td class="dashboard__td">
                     <button class="dashboard__button" [routerLink]="['/admin', 'post', post.id, 'edit']">Открыть</button>
-                    <a (click)="deletePost(post.id)" class="dashboard__button_del">Удалить</a>
+                    <a (click)="deletePost(post.id)" class="dashboard__button dashboard__button_del">Удалить</a>
                 </td>
             </tr>
         </tbody>

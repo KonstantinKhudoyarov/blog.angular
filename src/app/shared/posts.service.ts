@@ -36,4 +36,8 @@ export class PostsService {
                 });
             }));
     }
+
+    remove(id: string): Observable<void> {
+        return this.http.delete<void>(`${environment.fbDBurl}/posts/${id}.json`);
+    }
 }

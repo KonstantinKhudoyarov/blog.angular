@@ -42,4 +42,9 @@
 
 .dashboard__button {
     margin-right: 10px;
+    cursor: pointer;
+
+    &_del {
+        color: red;
+    }
 }
