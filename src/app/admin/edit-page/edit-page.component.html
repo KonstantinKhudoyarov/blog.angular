@@ -11,7 +11,7 @@
             <label for="author" class="edit__label">Post content:</label>
             <quill-editor formControlName="text"></quill-editor>
         </div>
-        <button type="submit" class="edit__btn" [disabled]="form.invalid">Edit</button>
+        <button type="submit" class="edit__btn" [disabled]="form.invalid || submitted">Edit</button>
     </form>
 </div>
 
