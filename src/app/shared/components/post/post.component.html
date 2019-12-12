@@ -1,10 +1,10 @@
 <div class="post">
     <div class="post__header">
-        <h3 class="post__title">Post title</h3>
-        <small class="post__date">20.11.2019</small>
+        <h3 class="post__title">{{post.title}}</h3>
+        <small class="post__date">{{post.date}}</small>
     </div>
     <div class="post__footer">
-        <small class="post__autor">Konstantin</small>
-        <button class="post__btn" [routerLink]="['post', 11]">Show more</button>
+        <small class="post__autor">{{post.author}}</small>
+        <button class="post__btn" [routerLink]="['post', post.id]">Show more</button>
     </div>
 </div>

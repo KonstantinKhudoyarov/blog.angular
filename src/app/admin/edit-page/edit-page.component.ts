@@ -51,7 +51,7 @@ export class EditPageComponent implements OnInit, OnDestroy {
       title: this.form.value.title,
       text: this.form.value.text
     })
-    .subscribe(post => {
+    .subscribe(() => {
       this.submitted = false;
     });
   }
