@@ -1,7 +1,7 @@
 <div class="post">
     <div class="post__header">
         <h3 class="post__title">{{post.title}}</h3>
-        <small class="post__date">{{post.date}}</small>
+        <small class="post__date">{{post.date | date:'medium'}}</small>
     </div>
     <div class="post__footer">
         <small class="post__autor">{{post.author}}</small>
